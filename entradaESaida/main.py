@@ -7,8 +7,6 @@ genero = "M"
 nome = "Felipe"
 sobreNome = "Felix"
 
-
-
 # Interpolacao + formatacao
 print(f"Idade: {idade}")
 print(f"Salario: {salario:.2f}")
@@ -16,8 +14,11 @@ print(f"Altura: {altura:.2f}")
 print(f"Genero: {genero}")
 print(f"Nome Completo: {nome} {sobreNome}")
 
-#Entrada de dados
-endereco = str(input("Informe o endereco: "))
-estado = str(input("Informe o Estado: "))
+print(f"O Funcionario: {nome} {sobreNome}, Ganha {salario:.2f} por mes")
 
-print(f"Endereco: {endereco} {estado}")
+#Entrada de dados
+rua = input("Informe o rua: ")
+numero = int( input("Informe o numero: "))
+
+print(f"Endereco: {rua} {numero}")
+
