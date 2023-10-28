@@ -15,3 +15,8 @@ print(verduras)
 print(letras)
 print(numeros)
 print(carro)
+
+# Acessando elementos da lista
+print(frutas[0])
+print(frutas[2])
+
