@@ -26,3 +26,18 @@ matriz[0]
 matriz[0][0]
 matriz[0][-1]
 matriz[-1][-1]
+
+# Metodos de uma tupla
+# ().count
+cores = ("vermelho", "azul", "verde", "azul",)
+cores.count("vermelho")
+cores.count("azul")
+cores.count("verde")
+
+#().index
+linguagens = ("python", "js", "c", "java", "csharp",)
+linguagens.index("java")
+linguagens.index("python")
+
+#.()len
+len(linguagens)
