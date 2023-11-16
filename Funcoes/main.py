@@ -31,3 +31,22 @@ def exibir_poema(data_extenso, *args, **kwargs):
     mensagem = f"{data_extenso}\n\n{texto}\n\n{meta_dados}"
     print(mensagem)
 exibir_poema("Quarta, 15 nov 23","Zen of Python", "Beatiful is better than ugly.", autor="Tim Peters", ano=1999)
+
+#Parametros especiais
+#Positional only
+def criar_carro(modelo, ano, placa,/,marca,motor,combustivel):
+    print(modelo, ano, placa,marca,motor,combustivel)
+
+criar_carro("Ecosporte", 2007, "ABC-1234", marca="Ford", motor="1.6",combustivel="Flex")
+
+#Keyword only
+def criar_carro2(*,modelo, ano, placa,marca,motor,combustivel):
+    print(modelo, ano, placa,marca,motor,combustivel)
+
+criar_carro2(modelo="Ecosporte", ano=2007, placa="ABC-1234", marca="Ford",motor="1.6",combustivel="Flex")
+
+#Keyword and positional only
+def criar_carro3(modelo, ano, placa,/,*,marca,motor,combustivel):
+    print(modelo, ano, placa,marca,motor,combustivel)
+
+criar_carro3("Ecosporte", 2007, "ABC-1234", marca="Ford",motor="1.6",combustivel="Flex")
