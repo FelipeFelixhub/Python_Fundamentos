@@ -8,8 +8,11 @@ class Conta:
     def sacar(self, valor):
         self._saldo -= valor
 
+    def exibir_saldo(self):
+        return self._saldo
 conta = Conta(100)
 conta.depositar(200)
 conta.sacar(50)
 
-print(conta._saldo)
+print(conta.exibir_saldo())
+
